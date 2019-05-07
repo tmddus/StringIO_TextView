@@ -11,6 +11,10 @@ namespace StringIO_TextView
 {
     public partial class Form1 : Form
     {
+
+        string OrgStr = ""; // Org : 원조
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +22,7 @@ namespace StringIO_TextView
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+             OrgStr = this.lblResult.Text;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -28,7 +32,7 @@ namespace StringIO_TextView
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.lblResult.Text = this.OrgStr + this.txtEdit.Text;
         }
     }
 }
