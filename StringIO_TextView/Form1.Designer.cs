@@ -51,6 +51,7 @@
             this.txtEdit.Size = new System.Drawing.Size(297, 21);
             this.txtEdit.TabIndex = 1;
             this.txtEdit.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdit_KeyPress);
             // 
             // lblResult
             // 
